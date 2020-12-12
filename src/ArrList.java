@@ -5,19 +5,22 @@ public class ArrList {
 
     }
     public void go() {
-        ArrayList<Integer> myList = new ArrayList();
-        System.out.println("Добавим чисел в коллекцию");
-        myList.add(2);
-        myList.add(4);
+        ArrayList<String> myList = new ArrayList();
+        System.out.println("Добавим имен котиков в базу питомника");
+        myList.add("Ron");
+        myList.add("Meow");
+        myList.add("Kit");
+
         int size = myList.size();
-        System.out.println("Полученный размер: " + size);
+        System.out.println("Количество котиков: " + size);
         boolean check = myList.isEmpty();
         if (check == false) {
             System.out.println("Список не пустой");
         } else {
             System.out.println("Список пустой");
         }
-        System.out.println(myList.get(0));
+        myList.remove(0);
+
         System.out.println(myList);
     }
 }
